@@ -25,9 +25,9 @@ const game = (gameArr) => {
   const name = startGame();
   console.log(gameArr[0][0]);
   for (let i = 1; i <= 3; i += 1) {
-    console.log(question(Number(gameArr[i][0])));
+    console.log(question(gameArr[i][0]));
     const answerUser = answer();
-    if (answerUser === gameArr[i][1]) {
+    if (answerUser === String(gameArr[i][1])) {
       console.log('Correct!');
     } else {
       youLose(answerUser, gameArr[i][1], name);

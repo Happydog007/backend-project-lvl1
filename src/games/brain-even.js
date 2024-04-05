@@ -1,13 +1,13 @@
-const randomNumber = () => Math.floor(Math.random() * 100)
+const randomNumber = () => Math.floor(Math.random() * 100);
 
 const gameArr = () => {
-  let arr = [['Answer "yes" if the number is even, otherwise answer "no".']]
+  const arr = [['Answer "yes" if the number is even, otherwise answer "no".']];
   for (let i = 0; i < 3; i += 1) {
-    const number = randomNumber()
-    const correctAnswer = number % 2 === 0 ? 'yes' : 'no'
-    arr.push([String(number), correctAnswer])
+    const number = randomNumber();
+    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
+    arr.push([String(number), correctAnswer]);
   }
-  return arr
-}
+  return arr;
+};
 
-export default gameArr
+export default gameArr;

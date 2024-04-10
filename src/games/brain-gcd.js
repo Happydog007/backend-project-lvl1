@@ -17,6 +17,7 @@ const calculateGcd = (allDividers, maxNumber) => {
       return allDividers[i];
     }
   }
+  return allDividers;
 };
 
 const gcd = () => {
